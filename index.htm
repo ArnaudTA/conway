@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onended="start()">
+  <input type="range" id="height" name="volume" min="3" max="60" onchange="reset()" value="10">
+  <label for="height">Height</label>
+  <input type="range" id="width" name="volume" min="3" max="60" onchange="reset()" value="10">
+  <label for="width">Width</label>
+  <button type="button" onclick="playStop()" id="playstop">
+    Play
+  </button>
+  <button type="button" onclick="reset()" id="playstop">
+    Reset
+  </button>
+  <div id="playground"></div>
+</body>
+<script src="index.js"></script>
+
+</html>
