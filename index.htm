@@ -10,34 +10,26 @@
 
 <body onended="start()">
   <menu id="control">
-    <li>
-      <button type="button" onclick="playStop()" id="playstop">
-        Play
-      </button>
-    </li>
-    <li>
-      <button type="button" onclick="reset()" id="playstop">
-        Reset
-      </button>
-    </li>
-        <li>
-      <button type="button" onclick="nextStep()" id="nextstep">
-        >
-      </button>
-    </li>
-      <menu>
-        <label for="pattern-store">Choose a saved pattern:</label>
-        <select id="pattern-store">
-          <option value="home">home</option>
-          <option value="empty">empty</option>
-        </select>
-        <button type="button" onclick="load()" id="load">
-          Load
-        </button>
-        <button type="button" onclick="remove()" id="load">
-          Delete
-        </button>
-      </menu>
+    <button type="button" onclick="playStop()" id="playstop">
+      Play
+    </button>
+    <button type="button" onclick="reset()" id="playstop">
+      Reset
+    </button>
+    <button type="button" onclick="nextStep()" id="nextstep">
+      >
+    </button>
+    <label for="pattern-store">pattern</label>
+    <select id="pattern-store">
+      <option value="home">home</option>
+      <option value="empty">empty</option>
+    </select>
+    <button type="button" onclick="load()" id="load">
+      Load
+    </button>
+    <button type="button" onclick="remove()" id="load">
+      Delete
+    </button>
     <button type="button" onclick="save()" id="save">
       Save
     </button>
