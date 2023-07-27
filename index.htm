@@ -9,36 +9,18 @@
 </head>
 
 <body onended="start()">
-  <menu id="control">
-    <button type="button" onclick="playStop()" id="playstop">
-      Play
-    </button>
-    <button type="button" onclick="reset()" id="playstop">
-      Reset
-    </button>
-    <button type="button" onclick="nextStep()" id="nextstep">
-      >
-    </button>
-    <label for="pattern-store">pattern</label>
-    <select id="pattern-store">
-      <option value="home">home</option>
-      <option value="empty">empty</option>
-    </select>
-    <button type="button" onclick="load()" id="load">
-      Load
-    </button>
-    <button type="button" onclick="remove()" id="load">
-      Delete
-    </button>
-    <button type="button" onclick="save()" id="save">
-      Save
-    </button>
-  </menu>
+
+  <div id="control">
+    <table>
+      <tr><td>R</td><td>reset</td></tr>
+      <tr><td>⎵</td><td>play/pause</td></tr>
+      <tr><td>></td><td>next step</td></tr>
+    </table>
+  </div>
   <div id="playground">
-    <table id="conway-table"></table>
   </div>
 </body>
 <!-- <script src="index.js"></script> -->
-<script src="script.js"></script>
+<script src="index.js"></script>
 
 </html>
